@@ -1,0 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".affiliate-btn").forEach(button => {
+        button.addEventListener("click", () => {
+            const link = button.getAttribute("data-link");
+            if (link) {
+                window.open(link, "_blank");
+            }
+        });
+    });
+});
